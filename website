@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE HEAVY RIFFS UNIVERSE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lovelo:wght@700&display=swap">
+    <style>
+        body {
+            font-family: 'Lovelo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2a1359, #8e2a4e);
+            color: #000000; /* Set all text to BLACK for better readability */
+            text-align: center;
+        }
+
+        header {
+            background-color: #1a0d3b;
+            color: #fff;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #1a0d3b;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .podcast-img, .bisch-img, .merch-img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #band-info, #bisch-section, #shop-section {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        #fun-button {
+            background-color: #8e2a4e;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 40px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        #fun-button:hover {
+            background-color: #6c1f3f;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+
+        function openEpisodes() {
+            window.location.href = "https://www.youtube.com/heavyriffspodcast";
+        }
+
+        function openAbout() {
+            window.location.href = "https://rss.com/podcasts/heavyriffspodcast/";
+        }
+
+        function openContact() {
+            window.location.href = "mailto:heavyriffspod@gmail.com";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>THE HEAVY RIFFS UNIVERSE</h1>
+    </header>
+
+    <nav>
+        <a href="javascript:void(0);" onclick="reloadPage()">Home</a>
+        <a href="javascript:void(0);" onclick="openEpisodes()">Episodes</a>
+        <a href="javascript:void(0);" onclick="openAbout()">About</a>
+        <a href="javascript:void(0);" onclick="openContact()">Contact</a>
+    </nav>
+
+    <section>
+        <img src="podcast-image.jpg" alt="The Heavy Riffs Universe" class="podcast-img">
+        <h2>Welcome to The Heavy Riffs Universe!</h2>
+        <p>Explore the cosmic sounds of heavy riffs and psychedelic tunes. Join us on this intergalactic journey!</p>
+    </section>
+
+    <section id="band-info">
+        <h2>About The Heavy Riffs Universe</h2>
+        <p>Discover the latest episodes, behind-the-scenes stories, and more about The Heavy Riffs Universe.</p>
+    </section>
+
+    <section id="bisch-section">
+        <img src="bisch-image.jpg" alt="BISCH - The Most Psychedelic Band" class="bisch-img">
+        <h2>BISCH: The Most Psychedelic Band in the Stratosphere</h2>
+        <p>Immerse yourself in the mind-bending sounds of BISCH. Their psychedelic tunes will take you to another dimension.</p>
+    </section>
+
+    <section id="shop-section">
+        <h2>Merchandise</h2>
+        <p>Check out our latest merchandise and support The Heavy Riffs Universe!</p>
+        <div>
+            <img src="merch-item1.jpg" alt="Merchandise Item 1" class="merch-img">
+            <p>Merchandise Item 1 - $19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div>
+            <img src="merch-item2.jpg" alt="Merchandise Item 2" class="merch-img">
+            <p>Merchandise Item 2 - $24.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <a href="https://www.youtube.com/heavyriffspodcast" id="fun-button" onclick="openEpisodes()">Listen Now</a>
+</body>
+
+</html>
